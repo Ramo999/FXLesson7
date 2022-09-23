@@ -8,13 +8,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="230.0" prefWidth="370.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.WelcomeController">
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="230.0" prefWidth="370.0" spacing="20.0" styleClass="p_bg" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.WelcomeController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
     <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="337.0" prefWidth="329.0">
         <children>
-            <Text layoutX="124.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME ">
+            <Text fill="WHITE" layoutX="124.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME ">
                 <font>
                     <Font name="Ageo-ExtraBold" size="12.0" />
                 </font>
@@ -23,7 +23,7 @@
                 <children>
                     <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="96.0" prefWidth="298.0">
                         <children>
-                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER WHAT TO DO">
+                            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER WHAT TO DO">
                                 <font>
                                     <Font name="Ageo-Regular" size="12.0" />
                                 </font>
@@ -40,7 +40,7 @@
                     </VBox>
                 </children>
             </VBox>
-            <Button id="logoutbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="139.0" onAction="#logoutbuttonClicked" prefHeight="30.0" prefWidth="140.0" text="Log Out" />
+            <Button id="logoutbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="139.0" onAction="#logoutbuttonClicked" prefHeight="30.0" prefWidth="140.0" styleClass="b_bg" text="Log Out" textFill="WHITE" />
         </children>
     </Pane>
 </VBox>
