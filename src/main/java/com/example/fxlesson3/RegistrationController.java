@@ -37,7 +37,7 @@ public class RegistrationController {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("welcome.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 370, 574);
+            Scene scene = new Scene(fxmlLoader.load(), 570, 476);
             Stage stage = new Stage();
             stage.setTitle("WELCOME PAGE");
             stage.setScene(scene);

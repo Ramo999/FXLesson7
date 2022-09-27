@@ -5,3 +5,25 @@
 .b_bg {
     -fx-background-color: #A52A2A;
 }
+
+.b2_bg {
+    -fx-background-color: #1c4466;
+}
+
+.b3_bg {
+    -fx-background-color: #3792cb;
+}
+
+.bt_bg {
+    -fx-background-color: transparent;
+}
+
+.menuItem:hover {
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.sidebarItem:hover {
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
