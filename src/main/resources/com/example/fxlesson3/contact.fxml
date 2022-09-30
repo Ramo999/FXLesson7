@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="400.0" spacing="20.0" styleClass="p_bg" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.LoginController">
+    <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="361.0" prefWidth="1.0">
+        <children>
+            <Text fill="WHITE" layoutX="87.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" textAlignment="CENTER">
+                <font>
+                    <Font name="Ageo-ExtraBold" size="12.0" />
+                </font>
+            </Text>
+            <Text fill="WHITE" layoutX="-52.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WhatsApp : 8 707 798 86 32" textAlignment="CENTER" wrappingWidth="337.6080017089844">
+                <font>
+                    <Font name="Ageo-Regular" size="12.0" />
+                </font>
+            </Text>
+            <Text fill="WHITE" layoutX="-52.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail : ramharondr@gmail.com" textAlignment="CENTER" wrappingWidth="337.6080017089844">
+                <font>
+                    <Font name="Ageo-Regular" size="12.0" />
+                </font>
+            </Text>
+        </children>
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+    </Pane>
+</VBox>

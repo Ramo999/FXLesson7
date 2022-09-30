@@ -5,16 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.util.Duration;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -31,6 +27,9 @@ public class WelcomeController implements Initializable {
 
     @FXML
     private AnchorPane slider;
+
+    @FXML
+    private BorderPane centerpane;
 
     public void initialize (URL location, ResourceBundle resourceBundle) {
 
@@ -71,5 +70,69 @@ public class WelcomeController implements Initializable {
                 menub.setVisible(false);
             });
         });
+    }
+
+    public void aboutMeClicked(ActionEvent event){
+        TranslateTransition slide = new TranslateTransition();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("about_me.fxml"));
+        try {
+            Pane registerPane = fxmlLoader.load();
+            centerpane.getChildren().clear();
+            centerpane.getChildren().add(registerPane);
+
+            slide.setToX(0);
+            slide.play();
+            slider.setTranslateX(-176);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void contactClicked(ActionEvent event){
+        TranslateTransition slide = new TranslateTransition();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("contact.fxml"));
+        try {
+            Pane registerPane = fxmlLoader.load();
+            centerpane.getChildren().clear();
+            centerpane.getChildren().add(registerPane);
+
+            slide.setToX(0);
+            slide.play();
+            slider.setTranslateX(-176);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void donateClicked(ActionEvent event){
+        TranslateTransition slide = new TranslateTransition();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("donate.fxml"));
+        try {
+            Pane registerPane = fxmlLoader.load();
+            centerpane.getChildren().clear();
+            centerpane.getChildren().add(registerPane);
+
+            slide.setToX(0);
+            slide.play();
+            slider.setTranslateX(-176);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void FAQClicked(ActionEvent event){
+        TranslateTransition slide = new TranslateTransition();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("faq.fxml"));
+        try {
+            Pane registerPane = fxmlLoader.load();
+            centerpane.getChildren().clear();
+            centerpane.getChildren().add(registerPane);
+
+            slide.setToX(0);
+            slide.play();
+            slider.setTranslateX(-176);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
