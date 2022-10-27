@@ -165,7 +165,7 @@
                            <String fx:value="sidebarItem" />
                         </styleClass>
                      </Button>
-                     <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" stylesheets="@Design.css" text="Donate" textFill="WHITE">
+                     <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#donateClicked" prefHeight="25.0" prefWidth="120.0" stylesheets="@Design.css" text="Donate" textFill="WHITE">
                         <font>
                            <Font name="System Bold" size="15.0" />
                         </font>
@@ -184,7 +184,7 @@
                            <String fx:value="sidebarItem" />
                         </styleClass>
                      </Button>
-                     <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" stylesheets="@Design.css" text="FAQ" textFill="WHITE">
+                     <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#FAQClicked" prefHeight="25.0" prefWidth="120.0" stylesheets="@Design.css" text="FAQ" textFill="WHITE">
                         <font>
                            <Font name="System Bold" size="15.0" />
                         </font>
@@ -209,7 +209,7 @@
          </AnchorPane>
       </left>
       <center>
-         <BorderPane fx:id="centeranchor" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane fx:id="centerpane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <BorderPane.margin>
                <Insets />
             </BorderPane.margin>
